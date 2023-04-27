@@ -4,11 +4,14 @@ import LowLevelDesign.DesignSplitwise.Expense.Split.Split;
 import LowLevelDesign.DesignSplitwise.User.User;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Expense {
     String expenseId;
     String description;
+
+    Date dateCreated;
     double expenseAmount;
     User paidByUser;
     ExpenseSplitType splitType;
@@ -23,6 +26,6 @@ public class Expense {
         this.paidByUser = paidByUser;
         this.splitType = splitType;
         this.splitDetails.addAll(splitDetails);
-
+        this.dateCreated = new Date();
     }
 }

@@ -67,13 +67,13 @@ public class Splitwise {
     private void addUsersToSplitwiseApp(){
 
         //adding User1
-        User user1 = new User("U1001", "User1");
+        User user1 = new User("U1001", "User1", "user1@gmail.com", "1234");
 
         //adding User2
-        User user2 = new User ("U2001", "User2");
+        User user2 = new User ("U2001", "User2","user2@gmail.com", "5678");
 
         //adding User3
-        User user3 = new User ("U3001", "User3");
+        User user3 = new User ("U3001", "User3","user3@gmail.com", "9101");
 
         userController.addUser(user1);
         userController.addUser(user2);

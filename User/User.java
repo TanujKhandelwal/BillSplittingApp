@@ -5,13 +5,21 @@ public class User {
 
     String userId;
     String userName;
+
+    String userEmail;
+
+    String userPhoneNumber;
     UserExpenseBalanceSheet userExpenseBalanceSheet;
 
-    public User(String id, String userName){
-        this.userId = id;
+
+    public User(String userId, String userName, String userEmail, String userPhoneNumber) {
+        this.userId = userId;
         this.userName = userName;
-        userExpenseBalanceSheet = new UserExpenseBalanceSheet();
+        this.userEmail = userEmail;
+        this.userPhoneNumber = userPhoneNumber;
+        this.userExpenseBalanceSheet = new UserExpenseBalanceSheet();
     }
+
     public String getUserId() {
         return userId;
     }
